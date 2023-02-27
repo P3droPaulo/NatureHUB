@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='welcome.css') }}">
+
+    <title>NatureHUB</title>
+</head>
+  <body>
+    <div class='img-block'>
+      <img src="{{ url_for('static', filename='assets/welcome_background.png') }}" alt="">
+    </div>
+    <div class='right-block'>
+      <div class='main-block'>
+        <h1 class='title'>NatureHUB</h1>
+        <h2 class='sub-title'>Bem Vindo ao Verde</h2>
+        <a class='bt-login' href="/login">Login</a>
+        <a class='bt-register' href="/register">Cadastrar-se</a>
+      </div>
+    </div>
+  </body>
+</html>
